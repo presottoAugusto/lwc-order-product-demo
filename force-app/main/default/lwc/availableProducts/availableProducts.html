@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Available Products" icon-name="standard:product_workspace" class="available-product">
+        <template if:true={isLoading}>
+            <lightning-spinner  alternative-text="Loading" variant="brand" size="small"></lightning-spinner>
+        </template>
+        <div class="table-container">
+            <lightning-datatable key-field="pricebookEntryId"
+                                class="available-product-table slds-max-medium-table_stacked-horizontal" 
+                                data={data} 
+                                columns={columns} 
+                                hide-checkbox-column
+                                onloadmore={loadMoreProducts} 
+                                enable-infinite-loading
+                                onrowaction={addProduct}>  
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+</template>

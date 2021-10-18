@@ -1,0 +1,11 @@
+.page-spinner{
+    position: fixed;
+    z-index: 9999;
+    height: calc(100% - 90px);
+    width: 106vw;
+    background: --lwc-brandHeaderContrastWeakActive;
+    margin-left: -30px;
+    margin-top: -16px;
+    opacity: 0.5;
+    bottom: 0;
+}

@@ -1,0 +1,11 @@
+.table-container {
+    height: 400px;
+}
+
+.table-container [data-label="List Price"] > span {
+    justify-content: space-around;
+}
+
+.slds-button[disabled], .slds-button:disabled {
+    cursor: not-allowed;
+}

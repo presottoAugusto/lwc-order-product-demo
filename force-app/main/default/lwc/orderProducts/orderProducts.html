@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Order Products" icon-name="standard:order_item" class="order-products">
+        <template if:true={isLoading}>
+            <lightning-spinner  alternative-text="Loading" variant="brand" size="small"></lightning-spinner>
+        </template>
+        <lightning-datatable key-field="pricebookEntryId"
+                            class="slds-max-medium-table_stacked-horizontal" 
+                            data={orderProducts} 
+                            columns={columns} 
+                            hide-checkbox-column>  
+        </lightning-datatable>
+    </lightning-card>
+</template>

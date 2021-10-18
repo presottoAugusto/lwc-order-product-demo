@@ -1,0 +1,10 @@
+<template>
+    <template if:true={isLoading}>
+        <div class='page-spinner'>
+            <lightning-spinner  alternative-text="Loading" variant="brand" size="small"></lightning-spinner>
+        </div>
+    </template>
+    <lightning-card title="Order Options" class="slds-text-align_right">
+        <lightning-button variant="success" label="Confirm Order" disabled={btnDisabled} onclick={handleConfirmOrder} class="slds-m-left_x-small slds-m-right_medium"></lightning-button>
+    </lightning-card>
+</template>

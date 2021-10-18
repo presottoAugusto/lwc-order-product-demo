@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningMessageChannel xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Message Channel to let other components know that the order has been confirmed.</description>
+    <isExposed>true</isExposed>
+    <masterLabel>OrderConfirmed</masterLabel>
+</LightningMessageChannel>
